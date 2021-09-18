@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <header>
-<title>Laptop - Sitemap</title>
+<title>Laptop - Shopping cart</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
@@ -49,21 +49,8 @@
 </ul>
 
 <div id="main">
-	<h2 class="title">Products range</h2>
-	<a href="./search.php?range=low">Low-end</a><br><br>
-	<a href="./search.php?range=mid">Mid-end</a><br><br>
-	<a href="./search.php?range=high">High-end</a>
-	<h2 class="title">Products categories</h2>
-	<a href="./search.php?category=best-value">Best value<small>(price/performance ratio)</small></a><br><br>
-	<a href="./search.php?category=portability">For high portability</a><br><br>
-	<a href="./search.php?category=gaming">For gaming</a><br><br>
-	<a href="./search.php?category=content-creation">For content creation</a><br><br>
-	<a href="./search.php?category=business">For business</a>
-	<h2 class="title">Account</h2>
-	<a href="./login.php">Account settings</a><br><br>
-	<a href="./cart.php">Shopping cart</a>
-	<h2 class="title">Website</h2>
-	<a href="./about.html">About us</a><br><br>
+	<h2>Shopping cart</h2>
+	<p>Coming soon...</p>
 </div>
 
 </body>
