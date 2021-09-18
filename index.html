@@ -1,1 +1,398 @@
-<h1>Hello world!</h1>
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A site made by Jimmy Leung.">
+    <meta name="author" content="Jimmy Leung">
+
+    <title>Jimmy Leung</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://student.tanghin.edu.hk/~S150646/navbar.js"></script>
+	<style>
+	.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem
+	}
+
+	.bd-callout-info {
+    border-left-color: #5bc0de
+	}
+
+	.bd-callout-info h4 {
+    color: #5bc0de
+	}
+    </style>
+  </head>
+
+  <body>
+
+    <div loadNav="http://student.tanghin.edu.hk/~S150646/navbar.html"></div>      
+
+    <main role="main" class="container text-center">
+	<noscript><div class="alert alert-warning" role="alert"><b>Warning</b>: JavaScript is not turned on, this site require it to add interactive content to the webpage and function properly.</div></noscript>
+	
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><span class="eng">About</span><span class="chi">關於</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+    <div class="accordion" id="accordionExample"> <div class="card"> <div class="card-header" id="headingOne"> <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">About this site</button> </h5> </div> <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample"> <div class="card-body">This website is created by Jimmy Leung.<br>This website is powered by Bootstrap (version 4.1.1)<br><br>We use cookies to ensure that we give you the best experience on our website. By continuing to use this site without changing settings, you are agreeing to our use of cookies.<br>We use Google Analytics (also the cookie we are using) to improve the experience of our website.<br><br><p id="getModifiedDate"></p>
+	<script>
+var client = new XMLHttpRequest();
+client.open("HEAD", "http://student.tanghin.edu.hk/~S150646/", true);
+client.onreadystatechange = function() {
+  if(this.readyState == 2) {
+    document.getElementById("getModifiedDate").innerHTML = "Last modified: "+ client.getResponseHeader("Last-Modified");
+  }
+}
+client.send();
+	</script>
+	</div> </div> </div> <div class="card"> <div class="card-header" id="headingTwo"> <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More sites made by Tanghinians</button> </h5> </div> <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"> <div class="card-body">S151204 - A developer of useful tools<br><a href="http://student.tanghin.edu.hk/~S151204/">Visit</a><hr>S150476 - A music editor who is good at editing and cutting music<br><a href="http://student.tanghin.edu.hk/~S150476/">Visit</a><hr>S150638 - A bus enthusiast<br><a href="http://student.tanghin.edu.hk/~S150638/">Visit</a></div> </div> </div> <div class="card"> <div class="card-header" id="headingThree"> <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Contact me</button> </h5> </div> <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample"> <div class="card-body">You can contact me at <a href="mailto:s150646@tanghin.edu.hk?Subject=Webpage%20Feedback">S150646@tanghin.edu.hk</a></div> </div> </div> </div>
+</div>
+	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><span class="eng">New features coming soon!</span><span class="chi">將推出新功能！</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+	<h1 style="color: green;"><b><span class="eng">Provide more than you need</span><span class="chi">提供超出你所需</span></b></h1>
+	<hr>
+	<i class="fab fa-google fa-10x"></i><br>
+	<h5><span class="eng">New fast and safe login feature</span><span class="chi">全新快捷又安全的登入系統</span></h5>
+	<p><span class="eng">Login using your beloved Google account! Just click the login button and it will do its magic. No registration is needed and no private personal information is collected.</span><span class="chi">自此之後，你無需注冊帳戶，只須利用你的Google帳戶，就可以登入。請放心，我們並不會收集你的私人資料。</span></p>
+	<i class="fas fa-wrench fa-10x"></i>
+	<h5><span class="eng">Customization of your own account</span><span class="chi">自定義你的帳戶</span></h5>
+	<p><span class="eng">Once you logged in, you can have your own icon at the chat room and customized information shown at the homepage.</span><span class="chi">當你登入後，你將可以在聊天室使用你自己的頭像，並訂製屬於你的主頁面。</span></p>
+	<i class="fas fa-eye fa-10x"></i>
+	<h5><span class="eng">Getting all information you need, at a glance</span><span class="chi">瞬間掌握一切</span></h5>
+	<p><span class="eng">Once you visit our homepage of our site, all customized information will show up for quick access.</span><span class="chi">當你瀏覽我們的主頁面，所有自訂的資料將呈現在你眼前。</span></p><hr>
+	<h5><span class="eng">This update will be implemented step by step slowly. Stay tuned!</span><span class="chi">此更新將逐步實施。 敬請關注！</span></h5>
+	</div>
+	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="eng">Close</span><span class="chi">關閉</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Display Settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+	<b>Sports news</b>
+	<a class="btn btn-primary" href="#" onclick='sportsNews();'>Show/Hide</a>
+	<br>
+	<b>Health news</b>
+	<a class="btn btn-primary" href="#" onclick='healthNews();'>Show/Hide</a>
+	<br>
+	<b>Politics news</b>
+	<a class="btn btn-primary" href="#" onclick='politicsNews();'>Show/Hide</a>
+	<br>
+	<b>World news</b>
+	<a class="btn btn-primary" href="#" onclick='worldNews();'>Show/Hide</a>
+	<br>
+	<b>Business news</b>
+	<a class="btn btn-primary" href="#" onclick='businessNews();'>Show/Hide</a>
+	<br>
+	<b>Technology news</b>
+	<a class="btn btn-primary" href="#" onclick='technologyNews();'>Show/Hide</a>
+	<br>
+	<b>Science news</b>
+	<a class="btn btn-primary" href="#" onclick='scienceNews();'>Show/Hide</a>
+	<br>
+	</div>
+	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div style="background-color: yellow;">
+<hr><h6>This website is currently under upgradation. Some features may not be working properly.</h6><hr>
+</div>
+-->
+
+<a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal3"><i class="fas fa-cog"></i></a>
+
+<div id="specialDay" class="card">
+    <div class="card-body">
+    <h4 id="specialDayText"></h4>
+    </div>
+</div>
+
+<div class="bd-callout bd-callout-info"><i class="fa fa-info-circle fa-2x float-left" style="color: #5bc0de"></i><h4>New changes!</h4>Changes of this website will be made soon.</div>
+
+
+<div class="siteNews">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-bullhorn"></i><span class="eng"> News of the site </span><span class="chi"> 網頁公告 </span><a href="#siteNews" data-toggle="collapse"><i class="fas fa-caret-down"></i></a></strong></div>
+<div id="siteNews" class="collapse show">
+<div class="row">
+<div class="col-md-6"><h5>Georgia...</h5><a class="btn btn-primary" href="http://student.tanghin.edu.hk/~S150646/others/projects/AI-Destruction"><span class="eng">Learn more</span><span class="chi">了解更多</span></a><hr class="d-md-none"></div><hr>
+<div class="col-md-6"><h5><span class="eng">Tanghin in Minecraft version 2.1 is out now!</span><span class="chi">Minecraft版鄧顯v2.1現已推出！</span></h5><a class="btn btn-primary" href="http://student.tanghin.edu.hk/~S150646/others/projects/Tanghin-in-Minecraft"><span class="eng">Download now</span><span class="chi">立即下載</span></a><hr class="d-md-none"></div><hr>
+<div class="col-md-6"><h5><span class="eng">About this site</span><span class="chi">關於此網站</span></h5><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal"><span class="eng">Learn more</span><span class="chi">了解更多</span></a><hr class="d-md-none"></div><hr>
+<div class="col-md-6"><h5><span class="eng">New features coming soon!</span><span class="chi">將推出新功能！</span></h5><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal2"><span class="eng">Learn more</span><span class="chi">了解更多</span></a><hr class="d-md-none"></div>
+<!-- <div class="col-md-6"><h5>Test experimental features</h5><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal3">Test out now</a><hr class="d-md-none"></div><hr> -->
+</div>
+</div>
+</div>
+
+<div class="sports-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-futbol"></i> Sports News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="sports1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="sports2" src=""></iframe>
+</div>
+
+<div class="health-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-heartbeat"></i> Health News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="health1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="health2" src=""></iframe>
+</div>
+
+<div class="politics-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-landmark"></i> Politics News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="politics1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="politics2" src=""></iframe>
+</div>
+
+<div class="world-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-globe-americas"></i> World News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="world1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="world2" src=""></iframe>
+</div>
+
+<div class="business-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-chart-line"></i> Business News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="business1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="business2" src=""></iframe>
+</div>
+
+<div class="technology-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-cogs"></i> Technology News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="technology1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="technology2" src=""></iframe>
+</div>
+
+<div class="science-news">
+<div class="alert alert-secondary" role="alert"><strong><i class="fas fa-flask"></i> Science News</strong></div>
+<iframe width="100%" frameborder="0" class="rssdog" id="science1" src=""></iframe>
+<iframe width="100%" frameborder="0" class="rssdog" id="science2" src=""></iframe>
+</div>
+
+<div class="Quote">
+<div class="alert alert-danger" role="alert"><strong><i class="fas fa-quote-left"></i><span class="eng"> Today's Quote</span><span class="chi"> 今天的名言</span></strong> <small><span class="eng">(powered by www.brainyquote.com)</span><span class="chi">(由www.brainyquote.com提供)</span></small></div>
+<script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+</div>
+
+<div class="Word">
+<div class="alert alert-warning" role="alert"><strong><i class="fas fa-apple-alt"></i><span class="eng"> A word a day</span><span class="chi"> 每日一單字</span></strong> <small><span class="eng">(powered by wordsmith.org)</span><span class="chi">(由wordsmith.org提供)</span></small></div>
+<script src="https://wordsmith.org/words/word.js" type="text/javascript">
+</script>
+</div>
+
+<div class="Weather">
+<div class="alert alert-success" role="alert"><strong><i class="fas fa-cloud-rain"></i><span class="eng"> Weather</span><span class="chi"> 天氣</span></strong> <small><span class="eng">(powered by Dark Sky)</span><span class="chi">(由Dark Sky提供)</span></small></div>
+<iframe id="forecast_embed" frameborder="0" height="208px" width="100%px" src="//forecast.io/embed/#lat=22.49976269&lon=114.12875895&name=Sheung Shui&color=#00aaff&font=Georgia&units=ca"></iframe><hr>
+<strong><a href="#HKOweather" data-toggle="collapse"><span class="eng">Weather forecast provided by Hong Kong Observatory</span><span class="chi">由香港天文台提供的九天天氣預報</span><i class="fas fa-caret-down"></i></a></strong>
+<div id="HKOweather" class="collapse">
+<script src="//rss.bloople.net/?url=http%3A%2F%2Frss.weather.gov.hk%2Frss%2FSeveralDaysWeatherForecast_uc.xml&showtitle=false&type=js"></script>
+</div>
+</div>
+
+<!--
+<div class="Animation">
+<div class="alert alert-primary" role="alert"><strong><i class="fas fa-film"></i><span class="eng"> Animation - Star Wars Asciimation</span><span class="chi">動畫：星球大戰編碼動畫</span></strong> <small><span class="eng">(made by Simon Jansen)</span><span class="chi">(由Simon Jansen製作)</span></small></div>
+<input type="button" id="openbtn" class="btn btn-secondary" value="Open">
+<input type="button" id="closebtn" class="btn btn-secondary" value="Close">
+</div>
+-->
+<script>
+$(function(){
+    $('#openbtn').click(function() {
+		$("#GameIframe").show();
+		$('#loader1').show();
+		$('#GameIframe').attr('src', "http://student.tanghin.edu.hk/~S150646/StarWars");
+		$('#GameIframe').on('load', function () {
+            $('#loader1').hide();
+        });
+    });
+	
+	$('#closebtn').click(function() {
+        $("#GameIframe").hide();
+		$('#GameIframe').attr('src', "");
+    });
+});
+</script>
+<style>
+#loader1{
+    width:100%;
+    max-width:100px;
+	height:100%;
+    max-height:100px;
+}
+</style>
+<br><p id="loader1">Loading animation...</p>
+</main>
+<iframe id="GameIframe" width="100%" height="100%" style="position:absolute; z-index:999999;" frameBorder="0"><div class="alert alert-danger">Oops! Your browser does not support HTML5 Canvas.</div></iframe>
+</div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+function sportsNews() {
+if($(".sports-news").css("display") == 'none'){
+                    $(".sports-news").css("display","block");
+					$('#sports1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FSPORTS%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#sports2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FSPORTS%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".sports-news").css("display","none");
+					$('#sports1').attr('src', "about:blank");
+					$('#sports2').attr('src', "about:blank");
+                }
+}
+
+function healthNews() {
+if($(".health-news").css("display") == 'none'){
+                    $(".health-news").css("display","block");
+					$('#health1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FHEALTH%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#health2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FHEALTH%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".health-news").css("display","none");
+					$('#health1').attr('src', "about:blank");
+					$('#health2').attr('src', "about:blank");
+                }
+}
+
+function politicsNews() {
+if($(".politics-news").css("display") == 'none'){
+                    $(".politics-news").css("display","block");
+					$('#politics1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FPOLITICS%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#politics2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FPOLITICS%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".politics-news").css("display","none");
+					$('#politics1').attr('src', "about:blank");
+					$('#politics2').attr('src', "about:blank");
+                }
+}
+
+function worldNews() {
+if($(".world-news").css("display") == 'none'){
+                    $(".world-news").css("display","block");
+					$('#world1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FWORLD%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#world2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FWORLD%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".world-news").css("display","none");
+					$('#world1').attr('src', "about:blank");
+					$('#world2').attr('src', "about:blank");
+                }
+}
+
+function businessNews() {
+if($(".business-news").css("display") == 'none'){
+                    $(".business-news").css("display","block");
+					$('#business1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FBUSINESS%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#business2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FBUSINESS%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".business-news").css("display","none");
+					$('#business1').attr('src', "about:blank");
+					$('#business2').attr('src', "about:blank");
+                }
+}
+
+function technologyNews() {
+if($(".technology-news").css("display") == 'none'){
+                    $(".technology-news").css("display","block");
+					$('#technology1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FTECHNOLOGY%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#technology2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FTECHNOLOGY%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".technology-news").css("display","none");
+					$('#technology1').attr('src', "about:blank");
+					$('#technology2').attr('src', "about:blank");
+                }
+}
+
+function scienceNews() {
+if($(".science-news").css("display") == 'none'){
+                    $(".science-news").css("display","block");
+					$('#science1').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FSCIENCE%3Fned%3Dus%26hl%3Den%26gl%3DUS&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+					$('#science2').attr('src', "https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2Fheadlines%2Fsection%2Ftopic%2FSCIENCE%3Fhl%3Dzh-HK%26gl%3DHK%26ceid%3DHK%253Azh-Hant&mode=html&showonly=&maxitems=0&showdescs=0&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=transparent&titlebgcol=%23d3d3d3&titletxtcol=%23000000&itembgcol=transparent&itemtxtcol=transparent&ctl=0");
+                } else{
+                    $(".science-news").css("display","none");
+					$('#science1').attr('src', "about:blank");
+					$('#science2').attr('src', "about:blank");
+                }
+}
+</script>
+<script>
+includeHTML();
+
+$(document).ready(function() {
+  $("#GameIframe").hide();
+  $('#loader1').hide();
+  $(".sports-news").hide();
+  $(".health-news").hide();
+  $(".politics-news").hide();
+  $(".world-news").hide();
+  $(".business-news").hide();
+  $(".technology-news").hide();
+  $(".science-news").hide();
+});
+</script>
+<script>
+  var TodayDate = new Date();
+  var d = TodayDate.getDate();
+  var m = TodayDate.getMonth()+1;
+  var y = TodayDate.getFullYear();
+  var Div = document.getElementById("specialDayText");
+  
+if (m === 2 && d === 14) {
+var text = document.createTextNode("Happy Valentine's Day!");
+
+Div.appendChild(text);
+
+document.getElementById("specialDay").style.backgroundColor = "Pink"
+} else {
+$("#specialDay").hide();
+}
+</script>
+  </body>
+</html>

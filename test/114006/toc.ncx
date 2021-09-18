@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+<meta content="ixdzs:114006" name="dtb:uid"/>
+<meta content="2" name="dtb:depth"/>
+<meta content="爱下电子书 [http://www.ixdzs.com]" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>三体2·黑暗森林</text>
+</docTitle>
+<docAuthor>
+<text>刘慈欣</text>
+</docAuthor>
+<navMap><navPoint id="chapter_27320856" playOrder="1"><navLabel><text>序章</text></navLabel><content src="chapter_27320856.xhtml"/></navPoint>
+<navPoint id="chapter_27320857" playOrder="2"><navLabel><text>第1部分</text></navLabel><content src="chapter_27320857.xhtml"/></navPoint>
+<navPoint id="chapter_27320858" playOrder="3"><navLabel><text>第2部分</text></navLabel><content src="chapter_27320858.xhtml"/></navPoint>
+<navPoint id="chapter_27320859" playOrder="4"><navLabel><text>第3部分</text></navLabel><content src="chapter_27320859.xhtml"/></navPoint>
+<navPoint id="chapter_27320860" playOrder="5"><navLabel><text>第4部分</text></navLabel><content src="chapter_27320860.xhtml"/></navPoint>
+<navPoint id="chapter_27320861" playOrder="6"><navLabel><text>第5部分</text></navLabel><content src="chapter_27320861.xhtml"/></navPoint>
+<navPoint id="chapter_27320862" playOrder="7"><navLabel><text>第6部分</text></navLabel><content src="chapter_27320862.xhtml"/></navPoint>
+<navPoint id="chapter_27320863" playOrder="8"><navLabel><text>第7部分</text></navLabel><content src="chapter_27320863.xhtml"/></navPoint>
+<navPoint id="chapter_27320864" playOrder="9"><navLabel><text>第8部分</text></navLabel><content src="chapter_27320864.xhtml"/></navPoint>
+<navPoint id="chapter_27320865" playOrder="10"><navLabel><text>第9部分</text></navLabel><content src="chapter_27320865.xhtml"/></navPoint>
+<navPoint id="chapter_27320866" playOrder="11"><navLabel><text>第10部分</text></navLabel><content src="chapter_27320866.xhtml"/></navPoint>
+<navPoint id="chapter_27320867" playOrder="12"><navLabel><text>第11部分</text></navLabel><content src="chapter_27320867.xhtml"/></navPoint>
+<navPoint id="chapter_27320868" playOrder="13"><navLabel><text>第12部分</text></navLabel><content src="chapter_27320868.xhtml"/></navPoint>
+<navPoint id="chapter_27320869" playOrder="14"><navLabel><text>第13部分</text></navLabel><content src="chapter_27320869.xhtml"/></navPoint>
+<navPoint id="chapter_27320870" playOrder="15"><navLabel><text>第14部分</text></navLabel><content src="chapter_27320870.xhtml"/></navPoint>
+<navPoint id="chapter_27320871" playOrder="16"><navLabel><text>第15部分</text></navLabel><content src="chapter_27320871.xhtml"/></navPoint>
+<navPoint id="chapter_27320872" playOrder="17"><navLabel><text>第16部分</text></navLabel><content src="chapter_27320872.xhtml"/></navPoint>
+<navPoint id="chapter_27320874" playOrder="18"><navLabel><text>第1部分</text></navLabel><content src="chapter_27320874.xhtml"/></navPoint>
+<navPoint id="chapter_27320875" playOrder="19"><navLabel><text>第2部分</text></navLabel><content src="chapter_27320875.xhtml"/></navPoint>
+<navPoint id="chapter_27320876" playOrder="20"><navLabel><text>第3部分</text></navLabel><content src="chapter_27320876.xhtml"/></navPoint>
+<navPoint id="chapter_27320877" playOrder="21"><navLabel><text>第4部分</text></navLabel><content src="chapter_27320877.xhtml"/></navPoint>
+<navPoint id="chapter_27320878" playOrder="22"><navLabel><text>第5部分</text></navLabel><content src="chapter_27320878.xhtml"/></navPoint>
+<navPoint id="chapter_27320879" playOrder="23"><navLabel><text>第6部分</text></navLabel><content src="chapter_27320879.xhtml"/></navPoint>
+<navPoint id="chapter_27320880" playOrder="24"><navLabel><text>第7部分</text></navLabel><content src="chapter_27320880.xhtml"/></navPoint>
+<navPoint id="chapter_27320881" playOrder="25"><navLabel><text>第8部分</text></navLabel><content src="chapter_27320881.xhtml"/></navPoint>
+<navPoint id="chapter_27320882" playOrder="26"><navLabel><text>第9部分</text></navLabel><content src="chapter_27320882.xhtml"/></navPoint>
+<navPoint id="chapter_27320883" playOrder="27"><navLabel><text>第10部分</text></navLabel><content src="chapter_27320883.xhtml"/></navPoint>
+<navPoint id="chapter_27320884" playOrder="28"><navLabel><text>第11部分</text></navLabel><content src="chapter_27320884.xhtml"/></navPoint>
+<navPoint id="chapter_27320885" playOrder="29"><navLabel><text>第12部分</text></navLabel><content src="chapter_27320885.xhtml"/></navPoint>
+<navPoint id="chapter_27320887" playOrder="30"><navLabel><text>第1部分</text></navLabel><content src="chapter_27320887.xhtml"/></navPoint>
+<navPoint id="chapter_27320888" playOrder="31"><navLabel><text>第2部分</text></navLabel><content src="chapter_27320888.xhtml"/></navPoint>
+<navPoint id="chapter_27320889" playOrder="32"><navLabel><text>第3部分</text></navLabel><content src="chapter_27320889.xhtml"/></navPoint>
+<navPoint id="chapter_27320890" playOrder="33"><navLabel><text>第4部分</text></navLabel><content src="chapter_27320890.xhtml"/></navPoint>
+<navPoint id="chapter_27320891" playOrder="34"><navLabel><text>第5部分</text></navLabel><content src="chapter_27320891.xhtml"/></navPoint>
+<navPoint id="chapter_27320892" playOrder="35"><navLabel><text>第6部分</text></navLabel><content src="chapter_27320892.xhtml"/></navPoint>
+<navPoint id="chapter_27320893" playOrder="36"><navLabel><text>第7部分</text></navLabel><content src="chapter_27320893.xhtml"/></navPoint>
+<navPoint id="chapter_27320894" playOrder="37"><navLabel><text>第8部分</text></navLabel><content src="chapter_27320894.xhtml"/></navPoint>
+<navPoint id="chapter_27320895" playOrder="38"><navLabel><text>第9部分</text></navLabel><content src="chapter_27320895.xhtml"/></navPoint>
+<navPoint id="chapter_27320896" playOrder="39"><navLabel><text>第10部分</text></navLabel><content src="chapter_27320896.xhtml"/></navPoint>
+<navPoint id="chapter_27320897" playOrder="40"><navLabel><text>第11部分</text></navLabel><content src="chapter_27320897.xhtml"/></navPoint>
+<navPoint id="chapter_27320898" playOrder="41"><navLabel><text>第12部分</text></navLabel><content src="chapter_27320898.xhtml"/></navPoint>
+<navPoint id="chapter_27320899" playOrder="42"><navLabel><text>第13部分</text></navLabel><content src="chapter_27320899.xhtml"/></navPoint>
+<navPoint id="chapter_27320900" playOrder="43"><navLabel><text>第14部分</text></navLabel><content src="chapter_27320900.xhtml"/></navPoint>
+<navPoint id="chapter_27320901" playOrder="44"><navLabel><text>第15部分</text></navLabel><content src="chapter_27320901.xhtml"/></navPoint>
+<navPoint id="chapter_27320902" playOrder="45"><navLabel><text>第16部分</text></navLabel><content src="chapter_27320902.xhtml"/></navPoint>
+<navPoint id="chapter_27320903" playOrder="46"><navLabel><text>第17部分</text></navLabel><content src="chapter_27320903.xhtml"/></navPoint>
+<navPoint id="chapter_27320904" playOrder="47"><navLabel><text>第18部分</text></navLabel><content src="chapter_27320904.xhtml"/></navPoint>
+<navPoint id="chapter_27320905" playOrder="48"><navLabel><text>第19部分</text></navLabel><content src="chapter_27320905.xhtml"/></navPoint>
+<navPoint id="chapter_27320906" playOrder="49"><navLabel><text>第20部分</text></navLabel><content src="chapter_27320906.xhtml"/></navPoint>
+<navPoint id="chapter_27320907" playOrder="50"><navLabel><text>第21部分</text></navLabel><content src="chapter_27320907.xhtml"/></navPoint>
+</navMap></ncx>
