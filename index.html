@@ -1,237 +1,27 @@
-<!DOCTYPE html>
-<html>
-<header>
-<title>Laptop - Price comparison</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
-<link rel="stylesheet" href="./style.css">
-<script src="./script.js"></script>
-</header>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<ul class="nav">
-	<li><a href="javascript:Menu();"><img class="navbtn" src="./img/menu.svg" alt="Menu"></a></li>
-	<div class="logoholder1"><a href="./"><img class="logo" src="./img/logo1.png" alt="Laptop"></a></div>
-	<div class="logoholder2"><a href="./"><img class="logo" src="./img/logo2.png" alt="Laptop"></a></div>
-	<ul class="navsearch">
-		<li>
-			<form id="search" action="./search.php" method="get">
-				<input type="text" placeholder="Search..." name="keyword">
-			</form>
-		</li>
-		<button class="navsearchbtn" type="submit" form="search" value="Submit"><img height="100%" src="./img/search.svg" alt="Search"></button>
-	</ul>
-	<li><a href="./login.php"><img class="navbtn" src="./img/account.svg" alt="Account"></a></li>
-	<li><a href="./cart.php"><img class="navbtn" src="./img/cart.svg" alt="Shopping cart"></a></li>
-</ul>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-<ul id="menu">
-	<div class="menuaccount">
-		<img src="./img/account.svg" alt="Account" width="100%">
-		<div>
-		<h3>User</h3>
-		</div>
-	</div>
-	<li><a class="menutitle">Range</a></li>
-	<li><a class="menubtn" href="./search.php?range=low">Low-end</a></li>
-	<li><a class="menubtn" href="./search.php?range=mid">Mid-end</a></li>
-	<li><a class="menubtn" href="./search.php?range=high">High-end</a></li>
-	<li><a class="menutitle">Categories</a></li>
-	<li><a class="menubtn" href="./search.php?category=best-value">Best value<br><small>(cost/performance ratio)</small></a></li>
-	<li><a class="menubtn" href="./search.php?category=portability">For high portability</a></li>
-	<li><a class="menubtn" href="./search.php?category=gaming">For gaming</a></li>
-	<li><a class="menubtn" href="./search.php?category=content-creation">For content creation</a></li>
-	<li><a class="menubtn" href="./search.php?category=business">For business</a></li>
-	<li><a class="menutitle">More</a></li>
-	<li><a class="menubtn" href="./sitemap.html">Sitemap</a></li>
-	<li><a class="menubtn" href="./about.html">About us</a></li>
-</ul>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
 
-<div id="main">
-	<div class="productnav">
-		<p>Welcome, <b>Guest</b></p>
-	</div>
-	<img class="discount1" width="100%" src="./img/discount1.png">
-	<img class="discount2" width="100%" src="./img/discount2.png">
-	
-	<h2>(Only for showcase purpose)</h2>
-	
-	<div class="homepageproduct">
-		<div>
-			<h2 class="title">High Portability</h2>
-			<div class="homepageproductdetail">
-				<img src="./products/img/ASUS ROG Zephyrus G14.jpg" width="100%">
-				<div>
-					<h3>ROG Zephyrus G14</h3>
-					<p><small>HKD$</small>14998</p>
-					<small><b>CPU:</b> AMD Ryzen™ 9 4900HS</small><br>
-					<small><b>GPU:</b> NVIDIA® GeForce RTX™ 2060 Max-Q</small>
-				</div>
-			</div>
-		</div>
-		
-		<div>
-			<h2 class="title">Gaming</h2>
-			<div class="homepageproductdetail">
-				<img src="./products/img/ASUS ROG Zephyrus G14.jpg" width="100%">
-				<div>
-					<h3>ROG Zephyrus G14</h3>
-					<p><small>HKD$</small>14998</p>
-					<small><b>CPU:</b> AMD Ryzen™ 9 4900HS</small><br>
-					<small><b>GPU:</b> NVIDIA® GeForce RTX™ 2060 Max-Q</small>
-				</div>
-			</div>
-		</div>
-		
-		<div>
-			<h2 class="title">Content Creation</h2>
-			<div class="homepageproductdetail">
-				<img src="./products/img/ASUS ROG Zephyrus G14.jpg" width="100%">
-				<div>
-					<h3>ROG Zephyrus G14</h3>
-					<p><small>HKD$</small>14998</p>
-					<small><b>CPU:</b> AMD Ryzen™ 9 4900HS</small><br>
-					<small><b>GPU:</b> NVIDIA® GeForce RTX™ 2060 Max-Q</small>
-				</div>
-			</div>
-		</div>
-		
-		<div>
-			<h2 class="title">Business</h2>
-			<div class="homepageproductdetail">
-				<img src="./products/img/ASUS ROG Zephyrus G14.jpg" width="100%">
-				<div>
-					<h3>ROG Zephyrus G14</h3>
-					<p><small>HKD$</small>14998</p>
-					<small><b>CPU:</b> AMD Ryzen™ 9 4900HS</small><br>
-					<small><b>GPU:</b> NVIDIA® GeForce RTX™ 2060 Max-Q</small>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	
-	
-	<script>
-	var File = new XMLHttpRequest();
-	var content;
-	File.open("GET", "./products/database.txt", false);
-	File.onreadystatechange = function ()
-	{
-		if(File.readyState === 4)
-		{
-			if(File.status === 200 || File.status == 0)
-			{
-				content = File.responseText;
-			}
-		}
-	}
-	File.send(null);
-	
-	var database = JSON.parse(content);
-	
-	var array1 = new Array();
-	var result1;
-	
-	var array2 = new Array();
-	var result2;
-	
-	var array3 = new Array();
-	var result3;
-	
-	var array4 = new Array();
-	var result4;
-	
-	for (let i in database) {
-		for (i2 = 0; i2 < Object.keys(database[i].Tag).length; i2++) {
-			if (database[i].Tag[i2] == "portability") {
-				array1.push(database[i].ID);
-			}
-		}
-	}
-	result1 = parseInt(array1[Math.floor(Math.random() * array1.length)]);
-	
-	console.log(" ");
-	for (let i in database) {
-		for (i2 = 0; i2 < Object.keys(database[i].Tag).length; i2++) {
-			if (database[i].Tag[i2] == "gaming" && parseInt(database[i].ID) != (result1 - 1)) {
-				array2.push(database[i].ID);
-				console.log("ID: " + parseInt(database[i].ID) + ", result1: " + (result1 - 1));
-			}
-		}
-	}
-	result2 = parseInt(array2[Math.floor(Math.random() * array2.length)]);
-	
-	console.log(" ");
-	for (let i in database) {
-		for (i2 = 0; i2 < Object.keys(database[i].Tag).length; i2++) {
-			if (database[i].Tag[i2] == "content-creation" && parseInt(database[i].ID) != (result1 - 1) && parseInt(database[i].ID) != (result2 - 1)) {
-				array3.push(database[i].ID);
-				console.log("ID: " + parseInt(database[i].ID) + ", result2: " + (result2 - 1));
-			}
-		}
-	}
-	result3 = parseInt(array3[Math.floor(Math.random() * array3.length)]);
-	
-	console.log(" ");
-	for (let i in database) {
-		for (i2 = 0; i2 < Object.keys(database[i].Tag).length; i2++) {
-			if (database[i].Tag[i2] == "business" && parseInt(database[i].ID) != (result1 - 1) && parseInt(database[i].ID) != (result2 - 1) && parseInt(database[i].ID) != (result3 - 1)) {
-				array4.push(database[i].ID);
-				console.log("ID: " + parseInt(database[i].ID) + ", result3: " + (result3 - 1))
-			}
-		}
-	}
-	result4 = parseInt(array4[Math.floor(Math.random() * array4.length)]);
-	
-	console.log(" ");
-	for (let i in database) {
-		if (database[i].ID == result1) {
-			console.log("result1: " + result1);
-			console.log(database[i].Name);
-		}
-		
-		if (database[i].ID == result2) {
-			console.log(" ");
-			console.log("result2: " + result2);
-			console.log(database[i].Name);
-		}
-		
-		if (database[i].ID == result3) {
-			console.log(" ");
-			console.log("result3: " + result3);
-			console.log(database[i].Name);
-		}
-		
-		if (database[i].ID == result4) {
-			console.log(" ");
-			console.log("result4: " + result4);
-			console.log(database[i].Name);
-		}
-	}
-	</script>
-</div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-<footer>
-<div class="footerlinkgroup">
-<a class="footerlink" href="./sitemap.html">Sitemap</a><a class="footerlink" href="./about.html">About us</a><a class="footerlink" href="./login.php">Account</a>
-</div>
-<small>&copy; Copyright 2020 Laptop, Inc. All rights reserved.<small>
-</footer>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
-<!--
-/*
-function DarkLight() {
-var text = document.getElementById("DarkLight").textContent;
-if (text == "Dark") {
-	var x = document.getElementsByClassName('light');
-	document.getElementById("DarkLight").innerHTML = "Light";
-}
-else {
-	var x = document.getElementsByClassName('dark');
-	document.getElementById("DarkLight").innerHTML = "Dark";
-}
--->
