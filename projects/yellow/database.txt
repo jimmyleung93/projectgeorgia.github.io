@@ -1,7 +1,7 @@
 {
 	"1": {
-		"Name": "IKEA chair",
+		"Title": "IKEA chair",
 		"Date": "21/9/2021",
-		"MediaName": "chair1.png",
+		"Media": "chair1.png",
 		"Detail": ""
 	},
