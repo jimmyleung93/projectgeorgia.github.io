@@ -1,7 +1,4 @@
-{
-	"1": {
-		"Title": "IKEA chair",
-		"Date": "21/9/2021",
-		"Media": "chair1.png",
-		"Detail": ""
-	},
+[
+{"Title": "IKEA chair", "Date": "21/9/2021", "Media": "chair1.png", "Detail": ""},
+{"Title": "IKEA chair", "Date": "21/9/2021", "Media": "chair1.png", "Detail": ""}
+]
