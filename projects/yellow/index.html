@@ -116,9 +116,8 @@
 							File.send(null);
 							
 							var database = JSON.parse(content);
-							//raw = '[{"Title": "IKEA chair", "Date": "21/9/2021", "Media": "chair1.png", "Detail": ""},{"Title": "Step ZERO", "Date": "21/9/2021", "Media": "donut1.png", "Detail": ""}]';
 							for (let i in database) {
-								document.write("<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='./media/" + database[i].Media + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + database[i].Title + "</p><div class='d-flex justify-content-between align-items-center'><button type='button' class='btn btn-sm btn-outline-secondary'>View</button><small class='text-muted'>" + database[i].Date + "</small></div></div></div></div>");
+								document.write("<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='./preview/yellow" + (i+1) + ".jpg' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + database[i].Title + "</p><div class='d-flex justify-content-between align-items-center'><button type='button' class='btn btn-sm btn-outline-secondary'>View</button><small class='text-muted'>" + database[i].Date + "</small></div></div></div></div>");
 							}
 						</script>
 					
