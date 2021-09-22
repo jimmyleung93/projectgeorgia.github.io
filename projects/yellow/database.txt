@@ -12,5 +12,12 @@
 		"Date": "21/9/2021",
 		"Media": "chair1.png",
 		"Detail": ""
+	},
+	"Metallic ball": {
+		"ID": "3",
+		"Title": "Metallic ball",
+		"Date": "22/9/2021",
+		"Media": "bouncy_ball.mkv",
+		"Detail": ""
 	}
 }
