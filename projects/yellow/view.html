@@ -117,11 +117,11 @@
 								document.getElementById("Date").innerHTML = database[i].Date;
 								if (database[i].Type == "image"){
 									document.getElementById("MediaImage").src = './media/' + database[i].Media;
-									document.getElementById("MediaVideo").hidden = true;
+									document.getElementById("MediaVideo").style.display = "none";
 								} else {
 									document.getElementById("MediaVideo").poster = './preview/' + id + '.jpg';
 									document.getElementById("MediaVideo").src = './media/' + database[i].Media;
-									document.getElementById("MediaImage").hidden = true;
+									document.getElementById("MediaImage").style.display = "none";
 								}
 							}
 						}
