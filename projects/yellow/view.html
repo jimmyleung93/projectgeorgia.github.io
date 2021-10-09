@@ -94,6 +94,7 @@
 			</section>
 			
 			<div class="container">
+				<img id="Preview">
 			
 				<script>
 					var File = new XMLHttpRequest();
@@ -118,6 +119,7 @@
 						if (database[i].ID == id) {
 							document.getElementById("Title").innerHTML = database[i].Title;
 							document.getElementById("Date").innerHTML = database[i].Date;
+							document.getElementById("Preview").src = './preview/' + id + '.jpg';
 						}
 					}
 				
