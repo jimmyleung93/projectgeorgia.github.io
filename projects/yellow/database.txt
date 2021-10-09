@@ -1,20 +1,20 @@
 {
 	"Step ZERO": {
-		"ID": "yellow1",
+		"ID": "1",
 		"Title": "Step ZERO",
 		"Date": "12/8/2021",
 		"Media": "donut1.png",
 		"Detail": ""
 	},
 	"IKEA chair": {
-		"ID": "yellow2",
+		"ID": "2",
 		"Title": "IKEA chair",
 		"Date": "13/8/2021",
 		"Media": "chair1.png",
 		"Detail": ""
 	},
 	"Metallic ball": {
-		"ID": "yellow3",
+		"ID": "3",
 		"Title": "Metallic ball",
 		"Date": "25/8/2021",
 		"Media": "bouncy_ball.mkv",
