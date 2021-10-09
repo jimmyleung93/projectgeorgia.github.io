@@ -84,8 +84,16 @@
 		</header>
 	
 		<main>
+			<section class="py-5 text-center container">
+				<div class="row py-lg-5">
+				  <div class="col-lg-6 col-md-8 mx-auto">
+					<h1 class="fw-light text-light" id="Title"></h1>
+					<p class="lead text-light" id="Date"></p>
+				  </div>
+				</div>
+			</section>
+			
 			<div class="container">
-				<h1 id="title"></h1>
 			
 				<script>
 					var File = new XMLHttpRequest();
@@ -108,7 +116,8 @@
 					
 					for (let i in database) {
 						if (database[i].ID == id) {
-							document.getElementById("title").innerHTML = database[i].Title;
+							document.getElementById("Title").innerHTML = database[i].Title;
+							document.getElementById("Date").innerHTML = database[i].Date;
 						}
 					}
 				
