@@ -101,7 +101,11 @@
 				var database = JSON.parse(content);
 				var id = window.location.hash.substring(1);
 				
-				document.getElementById("title").innerHTML = database[id].Title;
+				for (let i in database) {
+					if (database[i].ID == id) {
+						document.getElementById("title").innerHTML = database[id].Title;
+					}
+				}
 			
 			</script>
 		</main>
