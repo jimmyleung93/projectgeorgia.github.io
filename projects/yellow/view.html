@@ -95,7 +95,7 @@
 			
 			<div class="container">
 				<img class="d-block w-100" id="MediaImage">
-				<video controls id="MediaVideo"></video>
+				<video class="d-block w-100" id="MediaVideo" controls></video>
 			
 				<script>
 					var File = new XMLHttpRequest();
@@ -120,7 +120,7 @@
 						if (database[i].ID == id) {
 							document.getElementById("Title").innerHTML = database[i].Title;
 							document.getElementById("Date").innerHTML = database[i].Date;
-							if (database[i].Type == "Image"){
+							if (database[i].Type == "image"){
 								document.getElementById("MediaImage").src = './media/' + database[i].Media;
 							} else {
 								document.getElementById("MediaVideo").poster = './preview/' + id + '.jpg';
