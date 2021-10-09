@@ -94,7 +94,8 @@
 			</section>
 			
 			<div class="container">
-				<img class="d-block w-100" id="Preview">
+				<img class="d-block w-100" id="MediaImage">
+				<video controls id="MediaVideo"></video>
 			
 				<script>
 					var File = new XMLHttpRequest();
@@ -119,7 +120,12 @@
 						if (database[i].ID == id) {
 							document.getElementById("Title").innerHTML = database[i].Title;
 							document.getElementById("Date").innerHTML = database[i].Date;
-							document.getElementById("Preview").src = './preview/' + id + '.jpg';
+							if (database[i].Type == "Image"){
+								document.getElementById("MediaImage").src = './media/' + database[i].Media;
+							} else {
+								document.getElementById("MediaVideo").poster = './preview/' + id + '.jpg';
+								document.getElementById("MediaVideo").src = './media/' + database[i].Media;
+							}
 						}
 					}
 				

@@ -4,6 +4,7 @@
 		"Title": "Step ZERO",
 		"Date": "12/8/2021",
 		"Media": "donut1.png",
+		"Type": "image",
 		"Detail": ""
 	},
 	"IKEA chair": {
@@ -11,6 +12,7 @@
 		"Title": "IKEA chair",
 		"Date": "13/8/2021",
 		"Media": "chair1.png",
+		"Type": "image",
 		"Detail": ""
 	},
 	"Metallic ball": {
@@ -18,6 +20,7 @@
 		"Title": "Metallic ball",
 		"Date": "25/8/2021",
 		"Media": "bouncy_ball.mkv",
+		"Type": "video",
 		"Detail": ""
 	}
 }
