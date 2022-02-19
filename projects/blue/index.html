@@ -118,7 +118,7 @@
 							var database = JSON.parse(content);
 							var str = "";
 							for (let i in database) {
-								str = "<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='./" + database[i].Title + "/preview.jpg' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + database[i].Title + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='../view#" + database[i].ID + "'>View</a><small class='text-muted'>" + database[i].Date + "</small></div></div></div></div>" + str;
+								str = "<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='./" + database[i].Title + "/preview.jpg' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + database[i].Title + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='./view#" + database[i].ID + "'>View</a><small class='text-muted'>" + database[i].Date + "</small></div></div></div></div>" + str;
 							}
 							document.write(str);
 						</script>
