@@ -1,0 +1,26 @@
+{
+	"Step ZERO": {
+		"ID": "1",
+		"Title": "Step ZERO",
+		"Date": "12/8/2021",
+		"Media": "donut1.png",
+		"Type": "image",
+		"Detail": "<p>This is done with the help of the dount tutorial by Blender Guru.</p>"
+	},
+	"IKEA chair": {
+		"ID": "2",
+		"Title": "IKEA chair",
+		"Date": "13/8/2021",
+		"Media": "chair1.png",
+		"Type": "image",
+		"Detail": "<p>First time to apply the material onto the 3D model.</p>"
+	},
+	"Metallic ball": {
+		"ID": "3",
+		"Title": "Metallic ball",
+		"Date": "25/8/2021",
+		"Media": "bouncy_ball.mkv",
+		"Type": "video",
+		"Detail": "<p>First time to try out the animation keyframe. Looks good <b>despite it all starts with a stupid idea!</b></p>"
+	}
+}
