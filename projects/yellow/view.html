@@ -32,20 +32,6 @@
 			#Header {
 			  padding-top: 3rem;
 			}
-			
-			@media (max-width:767px) {
-			  #MediaImage #MediaVideo{
-				width: 100vw; !important
-			  }	
-			}
-			
-			@media (min-width:768px) {
-			  #MediaImage #MediaVideo{
-				float: left;
-				width: 45vw; !important	
-				padding-right: 1rem;
-			  }	
-			}
 		</style>
 	</head>
 	<body>
@@ -101,18 +87,12 @@
 				<h1 class="fw-bold" id="Title"></h1>
 				<p class="text-muted" id="Date"></p>
 				<hr>
-				<div style="display: inline-block;">
-					<img id="MediaImage">
-					<video id="MediaVideo" controls></video>
-					<h2>Detail</h2>
-					<hr>
-					
-				</div>
-			</section>
-			
-			<div class="container">
+				<img class="w-100" id="MediaImage">
+				<video class="w-100" id="MediaVideo" controls></video>
+				<h2>Detail</h2>
+				<hr>
 				<div id="Detail"></div>
-			</div>
+			</section>
 			
 			<script>
 				var File = new XMLHttpRequest();
