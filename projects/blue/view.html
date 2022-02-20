@@ -145,6 +145,7 @@
 					
 					
 					<div class="tab-pane fade" id="nav-changelog" role="tabpanel" aria-labelledby="nav-changelog-tab">
+						<br>
 						<div id="Changelog"></div>
 					</div>
 				</div>
@@ -192,7 +193,7 @@
 						first = true;
 						for (let i3 in database[i].Download_version) {
 							if (first) {
-								document.getElementById("Download").innerHTML += '<tr><th scope="row"><p>' + database[i].Download_version[i3] + '</p><span class="badge rounded-pill bg-success">Latest</span></th><td>' + database[i].Download_date[i3] + '</td><td><a href="' + database[i].Download_link[i3] + '">' + database[i].Download_type[i3] + '</a></td></tr>';
+								document.getElementById("Download").innerHTML += '<tr><th scope="row">' + database[i].Download_version[i3] + '<span class="badge rounded-pill bg-success">Latest</span></th><td>' + database[i].Download_date[i3] + '</td><td><a href="' + database[i].Download_link[i3] + '">' + database[i].Download_type[i3] + '</a></td></tr>';
 								first = false;
 							} else {
 								document.getElementById("Download").innerHTML += '<tr><th scope="row">' + database[i].Download_version[i3] + '</th><td>' + database[i].Download_date[i3] + '</td><td><a href="' + database[i].Download_link[i3] + '">' + database[i].Download_type[i3] + '</a></td></tr>';
