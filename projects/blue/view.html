@@ -92,7 +92,7 @@
 		
 		<main>		
 			<div class="container" id="Header">
-				<h1 class="fw-normal" id="Title"></h1>
+				<h1 class="fw-bold" id="Title"></h1>
 				<p class="text-muted" id="Date"></p>
 				<hr>
 				<nav>
@@ -201,7 +201,7 @@
 						}
 						
 						for (let i4 in database[i].Changelog_title) {
-							document.getElementById("Changelog").innerHTML += '<h2>' + database[i].Changelog_title[i4] + '</h2><hr><p>' + database[i].Changelog_detail[i4] + '</p><br>';
+							document.getElementById("Changelog").innerHTML += '<h2 class="fw-bold">' + database[i].Changelog_title[i4] + '</h2><hr><p>' + database[i].Changelog_detail[i4] + '</p><br>';
 						}
 					}
 				}
