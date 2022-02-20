@@ -3,9 +3,11 @@
 		"ID": "1",
 		"Title": "Tanghin in Minecraft",
 		"Date": "20/2/2022",
-		"Cover": 5,
-		"Media_detail": ["v2.1","v2.0","v1.2","v1.1","v1.0"],
-		"Media_link": ["https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v2.1","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v2.0","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.2","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.1","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.0"],
-		"Detail": "<h1>Testing</h1>"
+		"Cover": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+		"Download_title": ["v2.1","v2.0","v1.2","v1.1","v1.0"],
+		"Download_link": ["https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v2.1","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v2.0","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.2","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.1","https://github.com/projectgeorgia/Tanghin-in-Minecraft/releases/tag/v1.0"],
+		"Changelog_title": ["v2.1","v2.0","v1.2","v1.1","v1.0"],
+		"Changelog_detail": ["Improved and more detail designs","Improved and more detail designs, complete the whole project","Improvements on designs, fixed bugs and complete the whole building(excluded the surroundings)","Improvements on designs, working elevators and added 1st to 4th floors","Built half of the ground floor and the whole hall"],
+		"Detail": "<h2>Testing</h2>"
 	}
 }
