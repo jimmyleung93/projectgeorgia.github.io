@@ -34,15 +34,16 @@
 			}
 			
 			@media (max-width:767px) {
-			  #MediaImage{
-				width: 100vw; !important	
+			  #MediaImage #MediaVideo{
+				width: 100vw; !important
 			  }	
 			}
 			
 			@media (min-width:768px) {
-			  #MediaImage{
+			  #MediaImage #MediaVideo{
 				float: left;
-				width: 50vw; !important	
+				width: 45vw; !important	
+				padding-right: 1rem;
 			  }	
 			}
 		</style>
@@ -100,7 +101,7 @@
 				<h1 class="fw-bold" id="Title"></h1>
 				<p class="text-muted" id="Date"></p>
 				<hr>
-				<div class="container">
+				<div style="display: inline-block;">
 					<img id="MediaImage">
 					<video id="MediaVideo" controls></video>
 					<h2>Detail</h2>
