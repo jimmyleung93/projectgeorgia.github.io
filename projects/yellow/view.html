@@ -32,7 +32,10 @@
 			#Header {
 			  padding-top: 3rem;
 			}
-		
+			
+			#MediaImage #MediaVideo {
+			  float: left;
+			}	
 		</style>
 	</head>
 	<body>
@@ -88,8 +91,8 @@
 				<h1 class="fw-bold" id="Title"></h1>
 				<p class="text-muted" id="Date"></p>
 				<hr>
-				<img class="w-100" id="MediaImage">
-				<video class="w-100" id="MediaVideo" controls></video>
+				<img class="w-70" id="MediaImage">
+				<video class="w-70" id="MediaVideo" controls></video>
 			</section>
 			
 			<div class="container">
@@ -118,7 +121,7 @@
 				for (let i in database) {
 					if (database[i].ID == id) {
 						document.getElementById("Title").innerHTML = database[i].Title;
-						document.getElementById("Date").innerHTML = database[i].Date;
+						document.getElementById("Date").innerHTML = "Last Modified: " + database[i].Date;
 						if (database[i].Type == "image"){
 							document.getElementById("MediaImage").src = './media/' + database[i].Media;
 							document.getElementById("MediaVideo").style.display = "none";
