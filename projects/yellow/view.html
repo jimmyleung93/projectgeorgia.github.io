@@ -35,7 +35,8 @@
 			
 			#MediaImage #MediaVideo {
 			  float: left;
-			  width: 60%;
+			  width: 60%; !important
+			  height: auto;
 			}	
 		</style>
 	</head>
@@ -92,8 +93,13 @@
 				<h1 class="fw-bold" id="Title"></h1>
 				<p class="text-muted" id="Date"></p>
 				<hr>
-				<img id="MediaImage">
-				<video id="MediaVideo" controls></video>
+				<div>
+					<img id="MediaImage">
+					<video id="MediaVideo" controls></video>
+					<h2>Detail</h2>
+					<hr>
+					
+				</div>
 			</section>
 			
 			<div class="container">
