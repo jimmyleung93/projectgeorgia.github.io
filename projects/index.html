@@ -99,6 +99,8 @@
 						<script>
 							var Title, ID, Date, Preview, Colour, URL;
 							var first = true;
+							var go = true;
+							var dummy;
 							var File = new XMLHttpRequest();
 							var content;
 							File.open("GET", "./yellow/database.txt", false);
@@ -158,6 +160,50 @@
 								Preview.push(encodeURIComponent("./blue/" + database_blue[i2].Title + "/preview.jpg"));
 								Colour.push("Blue");
 								URL.push("./blue/view#" + database_blue[i2].ID);
+							}
+							
+							for (let i5 = 1; i5 < Date.length; i5++) {
+								go = true;
+								for (let i6 = i5; go; i6--) {
+									go = false;
+									if (Date[i6].split("/")[2] > Date[i6-1].split("/")[2]) {
+										go = true;
+									} else if (Date[i6].split("/")[2] == Date[i6-1].split("/")[2]) {
+										if (Date[i6].split("/")[1] > Date[i6-1].split("/")[1]) {
+											go = true;
+										} else if (Date[i6].split("/")[1] == Date[i6-1].split("/")[1]) {
+											if (Date[i6].split("/")[0] > Date[i6-1].split("/")[0]) {
+												go = true;
+											}
+										}
+									}
+									
+									if (go) {
+										dummy = Title[i6-1];
+										Title[i6-1] = Title[i6];
+										Title[i6] = dummy;
+										
+										dummy = ID[i6-1];
+										ID[i6-1] = ID[i6];
+										ID[i6] = dummy;
+										
+										dummy = Date[i6-1];
+										Date[i6-1] = Date[i6];
+										Date[i6] = dummy;
+										
+										dummy = Preview[i6-1];
+										Preview[i6-1] = Preview[i6];
+										Preview[i6] = dummy;
+										
+										dummy = Colour[i6-1];
+										Colour[i6-1] = Colour[i6];
+										Colour[i6] = dummy;
+										
+										dummy = URL[i6-1];
+										URL[i6-1] = URL[i6];
+										URL[i6] = dummy;
+									}
+								}
 							}
 							
 							console.log(Title);
