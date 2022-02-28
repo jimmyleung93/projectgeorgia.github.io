@@ -166,6 +166,8 @@
 								go = true;
 								for (let i6 = i5; go; i6--) {
 									go = false;
+									//ssssss
+									console.log(i6);
 									if (Date[i6].split("/")[2] > Date[i6-1].split("/")[2]) {
 										go = true;
 									} else if (Date[i6].split("/")[2] == Date[i6-1].split("/")[2]) {
@@ -178,6 +180,7 @@
 										}
 									}
 									
+									console.log(go);
 									if (go) {
 										dummy = Title[i6-1];
 										Title[i6-1] = Title[i6];
