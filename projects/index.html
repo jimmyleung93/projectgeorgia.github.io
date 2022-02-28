@@ -30,6 +30,7 @@
 			}
 		
 		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 	
@@ -96,7 +97,7 @@
 				  
 						
 						<script>
-							var title, ID, Date, Preview, Colour;
+							var Title, ID, Date, Preview, Colour;
 							var first = true;
 							var File = new XMLHttpRequest();
 							var content;
@@ -134,13 +135,13 @@
 							for (let i in database_yellow) {
 								if (first){
 									first = false;
-									title = [database_yellow[i].Title];
+									Title = [database_yellow[i].Title];
 									ID = [database_yellow[i].ID];
 									Date = [database_yellow[i].Date];
 									Preview = ["./yellow/preview/" + database_yellow[i].ID + ".jpg"];
 									Colour = ["Yellow"];
 								} else {
-									title.push(database_yellow[i].Title);
+									Title.push(database_yellow[i].Title);
 									ID.push(database_yellow[i].ID);
 									Date.push(database_yellow[i].Date);
 									Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
@@ -148,7 +149,15 @@
 								}
 							}
 							
-							console.log(title);
+							for (let i2 in database_blue) {
+								Title.push(database_blue[i].Title);
+								ID.push(database_blue[i].ID);
+								Date.push(database_blue[i].Date);
+								Preview.push(encodeURIComponent("./blue/" + database_blue[i].Title + "/preview.jpg"));
+								Colour.push("Blue");
+							}
+							
+							console.log(Title);
 							console.log(ID);
 							console.log(Date);
 							console.log(Preview);
