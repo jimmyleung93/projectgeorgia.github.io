@@ -97,7 +97,7 @@
 				  
 						
 						<script>
-							var Title, ID, Date, Preview, Colour;
+							var Title, ID, Date, Preview, Colour, URL;
 							var first = true;
 							var File = new XMLHttpRequest();
 							var content;
@@ -140,12 +140,14 @@
 									Date = [database_yellow[i].Date];
 									Preview = ["./yellow/preview/" + database_yellow[i].ID + ".jpg"];
 									Colour = ["Yellow"];
+									URL = ["./yellow/view#" + database_yellow[i].ID];
 								} else {
 									Title.push(database_yellow[i].Title);
 									ID.push(database_yellow[i].ID);
 									Date.push(database_yellow[i].Date);
 									Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
 									Colour.push("Yellow");
+									URL.push("./yellow/view#" + database_yellow[i].ID);
 								}
 							}
 							
@@ -155,6 +157,7 @@
 								Date.push(database_blue[i2].Date);
 								Preview.push(encodeURIComponent("./blue/" + database_blue[i2].Title + "/preview.jpg"));
 								Colour.push("Blue");
+								URL.push("./blue/view#" + database_blue[i].ID);
 							}
 							
 							console.log(Title);
@@ -162,6 +165,7 @@
 							console.log(Date);
 							console.log(Preview);
 							console.log(Colour);
+							console.log(URL);
 						</script>
 					
 					
