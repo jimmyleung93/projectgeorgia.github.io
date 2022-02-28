@@ -206,11 +206,9 @@
 								}
 							}
 							
-							var str = "";
 							for (let i7 in database) {
-								str = "<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='" + Preview[i7] + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + Title[i7] + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='" + URL[i7] + ID[i7] + "'>View</a><small class='text-muted'>" + Date[i7] + "</small></div></div></div></div>" + str;
+								document.write("<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='" + Preview[i7] + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + Title[i7] + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='" + URL[i7] + ID[i7] + "'>View</a><small class='text-muted'>" + Date[i7] + "</small></div></div></div></div>");
 							}
-							document.write(str);
 						</script>
 					
 					
