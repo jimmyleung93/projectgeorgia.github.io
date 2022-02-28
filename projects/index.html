@@ -85,9 +85,6 @@
 				  <div class="col-lg-6 col-md-8 mx-auto">
 					<h1 class="fw-light">All projects</h1>
 					<p class="lead text-muted">Literally.</p>
-					<p>
-					  <a href="../gallery" class="btn btn-secondary my-2">View in gallery</a>
-					</p>
 				  </div>
 				</div>
 			  </section>
@@ -99,9 +96,10 @@
 				  
 						
 						<script>
+							var title, ID, Date, Preview, Colour = [];
 							var File = new XMLHttpRequest();
 							var content;
-							File.open("GET", "./database.txt", false);
+							File.open("GET", "./yellow/database.txt", false);
 							File.onreadystatechange = function ()
 							{
 								if(File.readyState === 4)
@@ -114,12 +112,37 @@
 							}
 							File.send(null);
 							
-							var database = JSON.parse(content);
-							var str = "";
-							for (let i in database) {
-								str = "<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='./" + database[i].Title + "/preview.jpg' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + database[i].Title + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='./view#" + database[i].ID + "'>View</a><small class='text-muted'>" + database[i].Date + "</small></div></div></div></div>" + str;
+							var database_yellow = JSON.parse(content);
+							
+							File = new XMLHttpRequest();
+							File.open("GET", "./blue/database.txt", false);
+							File.onreadystatechange = function ()
+							{
+								if(File.readyState === 4)
+								{
+									if(File.status === 200 || File.status == 0)
+									{
+										content = File.responseText;
+									}
+								}
 							}
-							document.write(str);
+							File.send(null);
+							
+							var database_blue = JSON.parse(content);
+							
+							for (let i in database_yellow) {
+								title.push(database_yellow[i].Title);
+								ID.push(database_yellow[i].ID);
+								Date.push(database_yellow[i].Date);
+								Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
+								Colour.push("Yellow");
+							}
+							
+							console.log(title);
+							console.log(ID);
+							console.log(Date);
+							console.log(Preview);
+							console.log(Colour);
 						</script>
 					
 					
