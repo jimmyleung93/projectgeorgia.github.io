@@ -96,7 +96,8 @@
 				  
 						
 						<script>
-							var title, ID, Date, Preview, Colour = [];
+							var title, ID, Date, Preview, Colour;
+							var first = true;
 							var File = new XMLHttpRequest();
 							var content;
 							File.open("GET", "./yellow/database.txt", false);
@@ -131,11 +132,20 @@
 							var database_blue = JSON.parse(content);
 							
 							for (let i in database_yellow) {
-								title.push(database_yellow[i].Title);
-								ID.push(database_yellow[i].ID);
-								Date.push(database_yellow[i].Date);
-								Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
-								Colour.push("Yellow");
+								if (first){
+									first = false;
+									title = [database_yellow[i].Title];
+									ID = [database_yellow[i].ID];
+									Date = [database_yellow[i].Date];
+									Preview = ["./yellow/preview/" + database_yellow[i].ID + ".jpg"];
+									Colour = ["Yellow"];
+								} else {
+									title.push(database_yellow[i].Title);
+									ID.push(database_yellow[i].ID);
+									Date.push(database_yellow[i].Date);
+									Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
+									Colour.push("Yellow");
+								}
 							}
 							
 							console.log(title);
