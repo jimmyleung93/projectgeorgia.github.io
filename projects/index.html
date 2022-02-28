@@ -166,8 +166,6 @@
 								go = true;
 								for (let i6 = i5; go && i6 > 0; i6--) {
 									go = false;
-									//ssssss
-									console.log(i6);
 									if (Date[i6].split("/")[2] > Date[i6-1].split("/")[2]) {
 										go = true;
 									} else if (Date[i6].split("/")[2] == Date[i6-1].split("/")[2]) {
@@ -180,7 +178,6 @@
 										}
 									}
 									
-									console.log(go);
 									if (go) {
 										dummy = Title[i6-1];
 										Title[i6-1] = Title[i6];
@@ -209,12 +206,11 @@
 								}
 							}
 							
-							console.log(Title);
-							console.log(ID);
-							console.log(Date);
-							console.log(Preview);
-							console.log(Colour);
-							console.log(URL);
+							var str = "";
+							for (let i7 in database) {
+								str = "<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='" + Preview[i7] + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + Title[i7] + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='" + URL[i7] + ID[i7] + "'>View</a><small class='text-muted'>" + Date[i7] + "</small></div></div></div></div>" + str;
+							}
+							document.write(str);
 						</script>
 					
 					
