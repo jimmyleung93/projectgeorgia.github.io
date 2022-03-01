@@ -94,6 +94,7 @@
 		<main>		
 			<div class="container" id="header">
 				<h1 class="fw-bold" id="Title"></h1>
+				<span id="Discontinued"></span>
 				<p class="text-muted" id="Date"></p>
 				<hr>
 				<nav>
@@ -178,10 +179,11 @@
 				for (let i in database) {
 					if (database[i].ID == id) {
 						if (database[i].Discontinued == "yes") {
-							document.getElementById("Title").innerHTML = database[i].Title + " " + '<span class="badge badge-danger">Discontinued</span>';
-						} else {
-							document.getElementById("Title").innerHTML = database[i].Title;
+							document.getElementById("Discontinued").innerHTML = "Discontinue";
+							document.getElementById("Discontinued").classList.add("badge");
+							document.getElementById("Discontinued").classList.add("badge-danger");
 						}
+						document.getElementById("Title").innerHTML = database[i].Title;
 						name = "./" + database[i].Title + "/detail.html";
 						document.getElementById("Date").innerHTML = "Last Modified: " + database[i].Date;
 						document.getElementById("Detail").innerHTML = database[i].Detail;
