@@ -177,7 +177,7 @@
 				
 				for (let i in database) {
 					if (database[i].ID == id) {
-						if (database[i].Discontinued) {
+						if (database[i].Discontinued == "yes") {
 							document.getElementById("Title").innerHTML = database[i].Title + " " + '<span class="badge badge-danger">Discontinued</span>';
 						} else {
 							document.getElementById("Title").innerHTML = database[i].Title;
