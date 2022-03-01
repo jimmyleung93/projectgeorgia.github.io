@@ -1,0 +1,17 @@
+{
+	"Internet Explorer Clone": {
+		"ID": "1",
+		"Title": "Internet Explorer Clone",
+		"Date": "1/3/2022",
+		"Cover": ["1.jpg"],
+		"Discontinued": true,
+
+		"Download_version": ["v1.4"],
+		"Download_date": ["30 APR 2017"],
+		"Download_link": ["https://github.com/projectgeorgia/Internet-Explorer-Clone/releases/tag/v1.4"],
+		"Download_type": ["GitHub"],
+
+		"Changelog_title": ["v1.4"],
+		"Changelog_detail": ["Added the ability to switch between tabs"]
+	}
+}
