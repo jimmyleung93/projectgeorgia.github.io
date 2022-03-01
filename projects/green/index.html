@@ -28,6 +28,19 @@
 			  padding-bottom: 3rem;
 			  color: #5a5a5a;
 			}
+			
+			#header {
+			  background-image: url("../../img/green.jpg");
+			  background-position: center;
+			  background-size: 100% auto;
+			  background-repeat: no-repeat;
+			}
+			
+			@media (max-width:767px)  {
+			  #header {
+				background-size: auto 100%;
+			  }
+			}
 		
 		</style>
 	</head>
@@ -80,7 +93,7 @@
 		</header>
 	
 		<main>
-			<section class="py-5 text-center container">
+			<section class="py-5 text-center container"id="header">
 				<div class="row py-lg-5">
 				  <div class="col-lg-6 col-md-8 mx-auto">
 					<h1 class="fw-light">Applications</h1>
