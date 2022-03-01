@@ -13,5 +13,20 @@
 
 		"Changelog_title": ["v1.4"],
 		"Changelog_detail": ["Added the ability to switch between tabs"]
+	},
+	"PG Crypt": {
+		"ID": "2",
+		"Title": "PG Crypt",
+		"Date": "1/3/2022",
+		"Cover": ["1.jpg"],
+		"Discontinued": "yes",
+
+		"Download_version": ["v2.2"],
+		"Download_date": ["1 MAR 2022"],
+		"Download_link": ["./PG%20Crypt/PG_Crypt_v2.2.apk"],
+		"Download_type": ["Direct"],
+
+		"Changelog_title": ["v2.2"],
+		"Changelog_detail": ["New encryption algorithm and added support for Android 12"]
 	}
 }
