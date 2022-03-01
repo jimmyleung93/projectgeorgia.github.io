@@ -8,8 +8,8 @@
 
 		"Download_version": ["v1.4"],
 		"Download_date": ["30 APR 2017"],
-		"Download_link": ["https://github.com/projectgeorgia/Internet-Explorer-Clone/releases/tag/v1.4"],
-		"Download_type": ["GitHub"],
+		"Download_link": ["./Internet%20Explorer%20Clone/Internet_Explorer_Clone_v1.4.exe"],
+		"Download_type": ["Direct"],
 
 		"Changelog_title": ["v1.4"],
 		"Changelog_detail": ["Added the ability to switch between tabs"]
