@@ -125,7 +125,6 @@
 								}
 							}
 							File.send(null);
-							
 							var database_yellow = JSON.parse(content);
 							
 							File = new XMLHttpRequest();
@@ -141,8 +140,22 @@
 								}
 							}
 							File.send(null);
-							
 							var database_blue = JSON.parse(content);
+							
+							File = new XMLHttpRequest();
+							File.open("GET", "./green/database.txt", false);
+							File.onreadystatechange = function ()
+							{
+								if(File.readyState === 4)
+								{
+									if(File.status === 200 || File.status == 0)
+									{
+										content = File.responseText;
+									}
+								}
+							}
+							File.send(null);
+							var database_green = JSON.parse(content);
 							
 							for (let i in database_yellow) {
 								if (first){
@@ -167,6 +180,14 @@
 								Preview.push(encodeURIComponent("./blue/" + database_blue[i2].Title + "/preview.jpg"));
 								Colour.push("Blue");
 								URL.push("./blue/view#" + database_blue[i2].ID);
+							}
+							
+							for (let i3 in database_green) {
+								Title.push(database_green[i3].Title);
+								Date.push(database_green[i3].Date);
+								Preview.push(encodeURIComponent("./green/" + database_green[i3].Title + "/preview.jpg"));
+								Colour.push("Green");
+								URL.push("./green/view#" + database_green[i3].ID);
 							}
 							
 							for (let i5 = 1; i5 < Date.length; i5++) {
@@ -215,6 +236,8 @@
 									dummy = '<span class="badge bg-warning text-dark">Yellow</span>';
 								} else if (Colour[i7] == "Blue") {
 									dummy = '<span class="badge bg-primary">Blue</span>';
+								} else if (Colour[i7] == "Green") {
+									dummy = '<span class="badge bg-success">Green</span>';
 								}
 								document.write("<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='" + Preview[i7] + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + Title[i7] + " " + dummy + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='" + URL[i7] + "'>View</a><small class='text-muted'>" + Date[i7] + "</small></div></div></div></div>");
 							}
