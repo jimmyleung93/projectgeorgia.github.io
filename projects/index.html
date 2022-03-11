@@ -28,8 +28,16 @@
 			  padding-bottom: 3rem;
 			  color: #5a5a5a;
 			}
+			
+			#header {
+			  background-image: url("../img/projects.jpg");
+			  background-position: center;
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			}
 		
 		</style>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 	</head>
 	<body>
 	
@@ -56,10 +64,10 @@
 						Projects
 					  </a>
 					  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="../projects/black/">Film <span class="badge bg-dark">Black</span></a></li>
-						<li><a class="dropdown-item" href="../projects/yellow/">Animations & Render <span class="badge bg-warning text-dark">Yellow</span></a></li>
-						<li><a class="dropdown-item" href="../projects/green/">Applications <span class="badge bg-success">Green</span></a></li>
-						<li><a class="dropdown-item" href="../projects/blue/">Others <span class="badge bg-primary">Blue</span></a></li>
+						<li><a class="dropdown-item" href="./black/">Film <span class="badge bg-dark">Black</span></a></li>
+						<li><a class="dropdown-item" href="./yellow/">Animations & Render <span class="badge bg-warning text-dark">Yellow</span></a></li>
+						<li><a class="dropdown-item" href="./green/">Applications <span class="badge bg-success">Green</span></a></li>
+						<li><a class="dropdown-item" href="./blue/">Others <span class="badge bg-primary">Blue</span></a></li>
 						<li><hr class="dropdown-divider"></li>
 						<li><a class="dropdown-item" href="#">All projects</a></li>
 					  </ul>
@@ -80,13 +88,165 @@
 		</header>
 	
 		<main>
-			<section class="py-5 text-center container">
+			<section class="py-5 text-center container" id="header">
 				<div class="row py-lg-5">
 				  <div class="col-lg-6 col-md-8 mx-auto">
-					<h1 class="fw-light">Coming soon...</h1>
+					<h1 class="fw-light">All projects</h1>
+					<p class="lead">Literally.</p>
+					<p>
+						<a href="../gallery" class="btn btn-secondary my-2">View in gallery</a>
+					</p>
 				  </div>
 				</div>
 			</section>
+
+			<div class="album py-5 bg-light">
+				<div class="container">
+
+				  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				  
+						
+						<script>
+							var Title, Date, Preview, Colour, URL;
+							var first = true;
+							var go = true;
+							var dummy;
+							var File = new XMLHttpRequest();
+							var content;
+							File.open("GET", "./yellow/database.txt", false);
+							File.onreadystatechange = function ()
+							{
+								if(File.readyState === 4)
+								{
+									if(File.status === 200 || File.status == 0)
+									{
+										content = File.responseText;
+									}
+								}
+							}
+							File.send(null);
+							var database_yellow = JSON.parse(content);
+							
+							File = new XMLHttpRequest();
+							File.open("GET", "./blue/database.txt", false);
+							File.onreadystatechange = function ()
+							{
+								if(File.readyState === 4)
+								{
+									if(File.status === 200 || File.status == 0)
+									{
+										content = File.responseText;
+									}
+								}
+							}
+							File.send(null);
+							var database_blue = JSON.parse(content);
+							
+							File = new XMLHttpRequest();
+							File.open("GET", "./green/database.txt", false);
+							File.onreadystatechange = function ()
+							{
+								if(File.readyState === 4)
+								{
+									if(File.status === 200 || File.status == 0)
+									{
+										content = File.responseText;
+									}
+								}
+							}
+							File.send(null);
+							var database_green = JSON.parse(content);
+							
+							for (let i in database_yellow) {
+								if (first){
+									first = false;
+									Title = [database_yellow[i].Title];
+									Date = [database_yellow[i].Date];
+									Preview = ["./yellow/preview/" + database_yellow[i].ID + ".jpg"];
+									Colour = ["Yellow"];
+									URL = ["./yellow/view#" + database_yellow[i].ID];
+								} else {
+									Title.push(database_yellow[i].Title);
+									Date.push(database_yellow[i].Date);
+									Preview.push("./yellow/preview/" + database_yellow[i].ID + ".jpg");
+									Colour.push("Yellow");
+									URL.push("./yellow/view#" + database_yellow[i].ID);
+								}
+							}
+							
+							for (let i2 in database_blue) {
+								Title.push(database_blue[i2].Title);
+								Date.push(database_blue[i2].Date);
+								Preview.push(encodeURIComponent("./blue/" + database_blue[i2].Title + "/preview.jpg"));
+								Colour.push("Blue");
+								URL.push("./blue/view#" + database_blue[i2].ID);
+							}
+							
+							for (let i3 in database_green) {
+								Title.push(database_green[i3].Title);
+								Date.push(database_green[i3].Date);
+								Preview.push(encodeURIComponent("./green/" + database_green[i3].Title + "/preview.jpg"));
+								Colour.push("Green");
+								URL.push("./green/view#" + database_green[i3].ID);
+							}
+							
+							for (let i5 = 1; i5 < Date.length; i5++) {
+								go = true;
+								for (let i6 = i5; go && i6 > 0; i6--) {
+									go = false;
+									if (Date[i6].split("/")[2] > Date[i6-1].split("/")[2]) {
+										go = true;
+									} else if (Date[i6].split("/")[2] == Date[i6-1].split("/")[2]) {
+										if (Date[i6].split("/")[1] > Date[i6-1].split("/")[1]) {
+											go = true;
+										} else if (Date[i6].split("/")[1] == Date[i6-1].split("/")[1]) {
+											if (Date[i6].split("/")[0] >= Date[i6-1].split("/")[0]) {
+												go = true;
+											}
+										}
+									}
+									
+									if (go) {
+										dummy = Title[i6-1];
+										Title[i6-1] = Title[i6];
+										Title[i6] = dummy;
+										
+										dummy = Date[i6-1];
+										Date[i6-1] = Date[i6];
+										Date[i6] = dummy;
+										
+										dummy = Preview[i6-1];
+										Preview[i6-1] = Preview[i6];
+										Preview[i6] = dummy;
+										
+										dummy = Colour[i6-1];
+										Colour[i6-1] = Colour[i6];
+										Colour[i6] = dummy;
+										
+										dummy = URL[i6-1];
+										URL[i6-1] = URL[i6];
+										URL[i6] = dummy;
+									}
+								}
+							}
+							
+							for (let i7 in Date) {
+								dummy = "";
+								if (Colour[i7] == "Yellow") {
+									dummy = '<span class="badge bg-warning text-dark">Yellow</span>';
+								} else if (Colour[i7] == "Blue") {
+									dummy = '<span class="badge bg-primary">Blue</span>';
+								} else if (Colour[i7] == "Green") {
+									dummy = '<span class="badge bg-success">Green</span>';
+								}
+								document.write("<div class='col'><div class='card shadow-sm'><img class='bd-placeholder-img card-img-top w-100' width='100%' height='225' src='" + Preview[i7] + "' focusable='false' style='object-fit: cover;'/><div class='card-body'><p class='card-text'>" + Title[i7] + " " + dummy + "</p><div class='d-flex justify-content-between align-items-center'><a type='button' class='btn btn-sm btn-outline-secondary' href='" + URL[i7] + "'>View</a><small class='text-muted'>" + Date[i7] + "</small></div></div></div></div>");
+							}
+						</script>
+					
+					
+				  </div>
+				</div>
+			</div>
 		</main>
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
