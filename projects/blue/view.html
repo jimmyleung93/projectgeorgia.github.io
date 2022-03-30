@@ -98,17 +98,17 @@
 				<hr>
 				<nav>
 					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<button class="nav-link" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="false">Overview</button>
+						<button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</button>
 						<button class="nav-link" id="nav-download-tab" data-bs-toggle="tab" data-bs-target="#nav-download" type="button" role="tab" aria-controls="nav-download" aria-selected="false">Download</button>
 						<button class="nav-link" id="nav-changelog-tab" data-bs-toggle="tab" data-bs-target="#nav-changelog" type="button" role="tab" aria-controls="nav-changelog" aria-selected="false">Changelog</button>
-						<button class="nav-link active" id="nav-documentation-tab" data-bs-toggle="tab" data-bs-target="#nav-documentation" type="button" role="tab" aria-controls="nav-documentation" aria-selected="true">Documentation</button>
+						<button class="nav-link" id="nav-documentation-tab" data-bs-toggle="tab" data-bs-target="#nav-documentation" type="button" role="tab" aria-controls="nav-documentation" aria-selected="false">Documentation</button>
 					</div>
 				</nav>
 				
 				
 				
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+					<div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
 						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-indicators">
 								<div id="Cover_button"></div>
@@ -154,16 +154,17 @@
 					
 					
 					
-					<div class="tab-pane fade show active" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
+					<div class="tab-pane fade" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
 						<div id="Documentation"></div>
 					</div>
 				</div>
 			</div>
 			
 			<script>
-				if (!(window.location.hash.substring(1).includes("&"))) {
+				if (window.location.hash.substring(1).includes("&")) {
 					window.onload = function() {
-						document.getElementById("nav-overview-tab").click();
+						document.getElementById("nav-documentation-tab").click();
+						window.location.hash = window.location.hash.substring(1);
 					}
 				}
 				var File = new XMLHttpRequest();
