@@ -177,7 +177,7 @@
 				File.send(null);
 				
 				var database = JSON.parse(content);
-				var id = window.location.hash.substring(1);
+				var id = window.location.hash.substring(1).split("&doc=")[0];
 				var first = true;
 				var count = 0;
 				var name = "";
