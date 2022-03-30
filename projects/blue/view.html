@@ -161,11 +161,12 @@
 			</div>
 			
 			<script>
-				if
-				document.getElementById("nav-overview-tab").setAttribute("aria-selected", "false");
-				document.getElementById("nav-overview-tab").classList.remove("active");
-				document.getElementById("nav-documentation-tab").setAttribute("aria-selected", "true");
-				document.getElementById("nav-documentation-tab").classList.add("active");
+				if (window.location.hash.substring(1).includes("&")) {
+					document.getElementById("nav-overview-tab").setAttribute("aria-selected", "false");
+					document.getElementById("nav-overview-tab").classList.remove("active");
+					document.getElementById("nav-documentation-tab").setAttribute("aria-selected", "true");
+					document.getElementById("nav-documentation-tab").classList.add("active");
+				}
 				var File = new XMLHttpRequest();
 				var content;
 				File.open("GET", "./database.txt", false);
