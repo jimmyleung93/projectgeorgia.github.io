@@ -164,9 +164,9 @@
 				if (window.location.hash.substring(1).includes("&")) {
 					window.onload = function() {
 						document.getElementById("nav-documentation-tab").click();
+						window.location.hash = window.location.hash.substring(1);
 					}
 				}
-				
 				var File = new XMLHttpRequest();
 				var content;
 				File.open("GET", "./database.txt", false);
