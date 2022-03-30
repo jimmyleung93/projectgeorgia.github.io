@@ -126,7 +126,7 @@
 							</button>
 						</div>
 						<br>
-						<div id="Detail"></div>
+						<div id="Overview"></div>
 					</div>
 				  
 				  
@@ -155,7 +155,7 @@
 					
 					
 					<div class="tab-pane fade" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
-					
+						<div id="Documentation"></div>
 					</div>
 				</div>
 			</div>
@@ -181,13 +181,14 @@
 				var first = true;
 				var count = 0;
 				var name = "";
+				var name2 = "";
 				
 				for (let i in database) {
 					if (database[i].ID == id) {
 						document.getElementById("Title").innerHTML = database[i].Title;
 						name = "./" + database[i].Title + "/overview.html";
+						name2 = "./" + database[i].Title + "/documentation.html";
 						document.getElementById("Date").innerHTML = "Last Modified: " + database[i].Date;
-						document.getElementById("Detail").innerHTML = database[i].Detail;
 						
 						for (let i2 in database[i].Cover) {
 							if (first) {
@@ -218,7 +219,8 @@
 				}
 				
 				$(function(){
-					$("#Detail").load(encodeURIComponent(name)); 
+					$("#Overview").load(encodeURIComponent(name));
+					$("#Documentation").load(encodeURIComponent(name2)); 
 				});
 			</script>
 		</main>
