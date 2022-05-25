@@ -1,6 +1,6 @@
 {
 	"Tanghin in Minecraft": {
-		"ID": "1",
+		"ID": "THIMC",
 		"Title": "Tanghin in Minecraft",
 		"Date": "20/2/2022",
 		"Cover": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
