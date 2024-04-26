@@ -154,9 +154,9 @@
 					
 					
 					
-					<div class="tab-pane fade" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
+					<!--<div class="tab-pane fade" id="nav-documentation" role="tabpanel" aria-labelledby="nav-documentation-tab">
 						<div id="Documentation"></div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			
@@ -193,7 +193,7 @@
 					if (database[i].ID == id) {
 						document.getElementById("Title").innerHTML = database[i].Title;
 						name = "./" + database[i].Title + "/overview.html";
-						name2 = "./" + database[i].Title + "/documentation.html";
+						//name2 = "./" + database[i].Title + "/documentation.html";
 						document.getElementById("Date").innerHTML = "Last Modified: " + database[i].Date;
 						
 						for (let i2 in database[i].Cover) {
@@ -226,7 +226,7 @@
 				
 				$(function(){
 					$("#Overview").load(encodeURIComponent(name));
-					$("#Documentation").load(encodeURIComponent(name2)); 
+					//$("#Documentation").load(encodeURIComponent(name2)); 
 				});
 			</script>
 		</main>
