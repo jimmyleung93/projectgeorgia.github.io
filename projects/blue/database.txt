@@ -2,15 +2,15 @@
 	"Tanghin in Minecraft": {
 		"ID": "1",
 		"Title": "Tanghin in Minecraft",
-		"Date": "20/2/2022",
+		"Date": "27/4/2024",
 		"Cover": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
 
-		"Download_version": ["v2.1","v2.0","v1.2","v1.1","v1.0"],
-		"Download_date": ["27 DEC 2018","13 OCT 2018","12 AUG 2018","27 JUL 2018","25 JUN 2018"],
-		"Download_link": ["./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v2.1.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v2.0.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.2.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.1.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.0.mcworld"],
-		"Download_type": ["Direct","Direct","Direct","Direct","Direct"],
+		"Download_version": ["v2.2 (40 Anniversary Edition)","v2.1","v2.0","v1.2","v1.1","v1.0"],
+		"Download_date": ["27 APR 2024","27 DEC 2018","13 OCT 2018","12 AUG 2018","27 JUL 2018","25 JUN 2018"],
+		"Download_link": ["./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v2.2_40_Anniversary.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v2.1.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v2.0.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.2.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.1.mcworld","./Tanghin%20in%20Minecraft/Tanghin_in_Minecraft_v1.0.mcworld"],
+		"Download_type": ["Direct","Direct","Direct","Direct","Direct","Direct"],
 
-		"Changelog_title": ["v2.1","v2.0","v1.2","v1.1","v1.0"],
-		"Changelog_detail": ["Improved and more detail designs","Improved and more detail designs, complete the whole project","Improvements on designs, fixed bugs and complete the whole building(excluded the surroundings)","Improvements on designs, working elevators and added 1st to 4th floors","Built half of the ground floor and the whole hall"]
+		"Changelog_title": ["v2.2 (40 Anniversary Edition)","v2.1","v2.0","v1.2","v1.1","v1.0"],
+		"Changelog_detail": ["One new minigame alongside with minor tweaks","Improved and more detail designs","Improved and more detail designs, complete the whole project","Improvements on designs, fixed bugs and complete the whole building(excluded the surroundings)","Improvements on designs, working elevators and added 1st to 4th floors","Built half of the ground floor and the whole hall"]
 	}
 }
