@@ -11,6 +11,6 @@
 		"Download_type": ["Direct","Direct","Direct","Direct","Direct","Direct"],
 
 		"Changelog_title": ["v2.2 (40 Anniversary Edition)","v2.1","v2.0","v1.2","v1.1","v1.0"],
-		"Changelog_detail": ["-Added a brand new minigame<br>-Minor tweaks on designs","-Improved designs with more details","-Improved designs with more details<br>-Completed the whole project","-Improvements on designs<br>-Bug fixes<br>-Completed the whole building","-Improvements on designs<br>-Working elevators<br>-Finished most of the floors","-Completed the school hall and half of the ground floor."]
+		"Changelog_detail": ["-Added a brand new minigame<br>-Minor tweaks on designs","-Improved designs with more details","-Improved designs with more details<br>-Completed the whole project","-Improvements on designs<br>-Bug fixes<br>-Completed the whole building","-Improvements on designs<br>-Working elevators<br>-Finished most of the floors","-Completed the school hall and half of the ground floor"]
 	}
 }
