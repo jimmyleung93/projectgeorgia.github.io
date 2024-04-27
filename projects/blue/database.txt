@@ -3,7 +3,7 @@
 		"ID": "1",
 		"Title": "Tanghin in Minecraft",
 		"Date": "27/4/2024",
-		"Cover": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+		"Cover": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"],
 
 		"Download_version": ["v2.2 (40 Anniversary Edition)","v2.1","v2.0","v1.2","v1.1","v1.0"],
 		"Download_date": ["27 APR 2024","27 DEC 2018","13 OCT 2018","12 AUG 2018","27 JUL 2018","25 JUN 2018"],
